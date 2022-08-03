@@ -44,7 +44,7 @@ body{
     font-weight: 700;
     line-height: 30px;
     text-align: center;
-    margin: 0 64px 30px 64px;
+    margin: 40px 64px 30px 64px;
 }
 .header p{
     color: var(--darkGrayishMagenta);
@@ -98,7 +98,7 @@ body{
 .cards{
     background-color: var(--veryDarkMagenta);
     border-radius: 10px;
-    max-width: auto;
+    max-width: 330px;
     height: auto;
     margin: 20px 0px 0px 0px;
     color: var(--softPink);
@@ -139,19 +139,32 @@ body{
     text-justify: distribute;
 }
 
-
-
-
-
-
-
-/*-------------------------------Footer-----------------------------*/
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
     
+@media only screen and (min-width:376px){
+    .start1{
+        align-self: flex-start;
+    }
+    .start2{
+        align-self: center;
+    }
+    .start3{
+        align-self:flex-end
+    }
+    .card1{
+        align-self: flex-start;
+    }
+    .card2{
+        align-self: center;        
+    }
+    .card3{
+        align-self:flex-end
+    }
+}
+
+@media only screen and (min-width:769px){
+    body{
+        background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
+}
